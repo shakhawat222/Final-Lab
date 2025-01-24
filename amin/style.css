@@ -1,0 +1,243 @@
+/* General Page Styles */
+body {
+    background-color: #f0f8ff; /* Light Blue background for a fresher feel */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Centering the container */
+/* Layout for Left and Right Columns */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Left Column: Add Book */
+.left-column {
+    flex: 1;
+    max-width: 48%;
+}
+
+/* Right Column: Book List and Search Form */
+.right-column {
+    flex: 1;
+    max-width: 48%;
+}
+
+/* Form Box */
+.form-box {
+    background-color: #ffffff;
+    border: 2px solid #ffa07a; /* Soft Salmon color border */
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-box:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Add Book Form (Left Side) */
+.add-book-box {
+    flex: 1;
+    max-width: 400px;
+    margin: 10px;
+}
+
+/* Search Books Form (Right Side) */
+.search-book-box {
+    flex: 1;
+    max-width: 400px;
+    margin: 10px;
+}
+
+/* Borrowing Form */
+.borrowing-box {
+    flex: 1;
+    max-width: 400px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+/* Token (Left and Right) */
+.token-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Header Styles */
+h3 {
+    color: #ff6347; /* Tomato red for titles */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(255, 99, 71, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual Form Row Styling */
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 100%;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    background-color: #fff7e6; /* Soft light yellow on focus */
+}
+
+/* Submit Button */
+.submit-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+input[type="submit"] {
+    background-color: #ff9900; /* Bright Orange color for the buttons */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff6600; /* Darker orange on hover */
+}
+
+/* Book Image Section */
+.book-images-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.book-image {
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.book-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.book-image img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.book-image p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Token List Styling */
+/* Token List Styling */
+/* Token List Styling */
+.token-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligning the items from the start */
+    width: 80%;
+    margin-top: 20px; /* Space between the form and token list */
+}
+
+.token-list {
+    background-color: #f9f9f9; /* Light background for the token list */
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure the token list fills the width */
+    margin-top: 15px; /* Space after the Save Token button */
+    max-height: 300px; /* Optional: Set a max-height */
+    overflow-y: auto; /* Scroll if the list exceeds the max height */
+}
+
+.token-list ul {
+    list-style-type: none; /* Removes default list bullets */
+    padding-left: 0;
+    margin: 0;
+}
+
+.token-list ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd; /* Divider between items */
+    color: #333;
+}
+
+.token-list ul li:last-child {
+    border-bottom: none; /* Remove the border on the last item */
+}
+
+/* Save Token Button Styling (adjusted) */
+.save-token-btn {
+    background-color: #ff9900;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.save-token-btn:hover {
+    background-color: #ff6600; /* Darker orange on hover */
+}
